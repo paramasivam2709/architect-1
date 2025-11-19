@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - Stackly</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    body {background:404.html0e0e0e; color:404.htmlfff; font-family:'Montserrat';}
+
+    .dashboard-wrapper {
+      max-width:1200px;
+      margin:50px auto;
+      padding:20px;
+    }
+
+    .dash-header {
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      margin-bottom:30px;
+    }
+
+    .dash-header h2 {
+      font-family:'Oswald';
+      font-size:32px;
+      margin:0;
+    }
+
+    .dash-header button {
+      padding:10px 20px;
+    }
+
+    .card-grid {
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));
+      gap:20px;
+      margin-top:20px;
+    }
+
+    .card {
+      background:404.html1a1a1a;
+      padding:25px;
+      border-radius:12px;
+      text-align:center;
+      border:1px solid 404.html333;
+      transition:0.3s;
+    }
+
+    .card:hover {
+      transform:translateY(-5px);
+      border-color:404.html555;
+    }
+
+    .card h3 {
+      font-family:'Oswald';
+      margin-bottom:10px;
+      font-size:22px;
+    }
+
+    .logout-btn {
+      margin-top:30px;
+      padding:12px 20px;
+      display:inline-block;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="dashboard-wrapper">
+
+    <div class="dash-header">
+      <h2>Welcome, User 👋</h2>
+      <button class="btn btn-shadow-1" onclick="logout()">Logout</button>
+    </div>
+
+    <div class="card-grid">
+      <div class="card">
+        <h3>Profile</h3>
+        <p>View & edit your personal details.</p>
+      </div>
+
+      <div class="card">
+        <h3>Projects</h3>
+        <p>Manage your active and completed projects.</p>
+      </div>
+
+      <div class="card">
+        <h3>Messages</h3>
+        <p>Check your inbox and notifications.</p>
+      </div>
+
+      <div class="card">
+        <h3>Settings</h3>
+        <p>Customize your experience.</p>
+      </div>
+    </div>
+
+    <a href="index.html" class="btn btn-gray logout-btn">← Back to Home</a>
+
+  </div>
+
+  <script>
+    function logout(){
+      window.location.href = "login.html";
+    }
+  </script>
+
+</body>
+</html>

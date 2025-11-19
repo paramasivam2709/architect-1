@@ -1,0 +1,126 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>404 — Page not found</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet" media="screen">
+
+  <style>
+    .error-main {
+      min-height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 6vh 2rem;
+      perspective: 1000px; /* Needed for 3D effect */
+    }
+
+    .error-wrapper {
+      max-width: 800px;
+      width: 100%;
+    }
+
+    .error-code {
+      font-family: 'Oswald', sans-serif;
+      font-size: 20vmin;
+      letter-spacing: 0.1em;
+      color: #fff;
+      margin: 0 0 0.4rem;
+      transition: transform 0.15s ease-out;
+      transform-style: preserve-3d;
+    }
+
+    .error-sub {
+      font-family: 'montserratsemibold', sans-serif;
+      font-size: 1.2rem;
+      color: rgba(255,255,255,0.8);
+      margin-bottom: 2rem;
+    }
+
+    .error-actions a {
+      margin: 0 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Loader -->
+  <div class="loader">
+    <div class="page-lines">
+      <div class="container">
+        <div class="col-line col-xs-4"><div class="line"></div></div>
+        <div class="col-line col-xs-4"><div class="line"></div></div>
+        <div class="col-line col-xs-4"><div class="line"></div><div class="line"></div></div>
+      </div>
+    </div>
+    <div class="loader-brand">
+      <div class="sk-folding-cube">
+        <div class="sk-cube1 sk-cube"></div>
+        <div class="sk-cube2 sk-cube"></div>
+        <div class="sk-cube4 sk-cube"></div>
+        <div class="sk-cube3 sk-cube"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <main class="main">
+    <div class="error-main" id="hoverArea">
+      <div class="error-wrapper">
+        <h1 class="error-code" id="errorText">404</h1>
+        <p class="error-sub">Oops! The page you’re looking for doesn’t exist.</p>
+
+        <div class="error-actions">
+          <a href="index.html" class="btn btn-shadow-1">Go Home</a>
+          <a href="contacts.html" class="btn btn-gray">Contact Support</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-lines">
+      <div class="container">
+        <div class="col-line col-xs-4"><div class="line"></div></div>
+        <div class="col-line col-xs-4"><div class="line"></div></div>
+        <div class="col-line col-xs-4"><div class="line"></div><div class="line"></div></div>
+      </div>
+    </div>
+  </main>
+
+  <!-- JS (3D Hover + Loader hide) -->
+  <script>
+    // 3D Hover Effect
+    const area = document.getElementById("hoverArea");
+    const text = document.getElementById("errorText");
+
+    area.addEventListener("mousemove", (e) => {
+      const rect = area.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+
+      const rotateY = (x / rect.width - 0.5) * 20; // left & right tilt
+      const rotateX = (0.5 - y / rect.height) * 20; // up & down tilt
+
+      text.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+    });
+
+    area.addEventListener("mouseleave", () => {
+      text.style.transform = "rotateX(0deg) rotateY(0deg)";
+    });
+
+    // Loader hide
+    window.addEventListener('load', function() {
+      var loader = document.querySelector('.loader');
+      if (loader) {
+        loader.style.opacity = '0';
+        setTimeout(function(){ loader.style.display = 'none'; }, 600);
+      }
+    });
+  </script>
+
+</body>
+</html>

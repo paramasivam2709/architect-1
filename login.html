@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Stackly</title>
+  <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .auth-box {max-width:450px;margin:80px auto;padding:40px;background:#111;border-radius:12px;text-align:center;}
+    .auth-box h2{color:#fff;margin-bottom:20px;font-family:'Oswald';}
+    .auth-box input{width:100%;padding:12px;margin:10px 0;background:#222;border:1px solid #333;color:#fff;border-radius:6px;}
+    .auth-box button{width:100%;padding:12px;margin-top:10px;}
+    .error-msg{color:#ff4444;margin-top:10px;display:none;}
+  </style>
+</head>
+<body>
+  <div class="auth-box">
+    <h2>Login</h2>
+
+    <input type="email" id="loginEmail" placeholder="Email">
+    <input type="password" id="loginPass" placeholder="Password">
+
+    <p class="error-msg" id="loginErr">* All fields required</p>
+
+    <button class="btn btn-shadow-1" onclick="loginUser()">Login</button>
+
+    <div style="margin-top:15px;">
+      <a href="forgot.html" style="color:#888;display:block;margin-bottom:8px;">Forgot Password?</a>
+      <a href="register.html" style="color:#888;display:block;">Don't have an account? Register</a>
+    </div>
+  </div>
+
+  <script>
+    function loginUser(){
+      let email=document.getElementById('loginEmail').value.trim();
+      let pass=document.getElementById('loginPass').value.trim();
+      if(email===""||pass===""){
+        document.getElementById('loginErr').style.display='block';
+        return;
+      }
+      window.location.href="404.html";
+    }
+  </script>
+</body>
+</html>

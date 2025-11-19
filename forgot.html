@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forgot Password - Stackly</title>
+  <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .auth-box {max-width:450px;margin:80px auto;padding:40px;background:#111;border-radius:12px;text-align:center;}
+    .auth-box h2{color:#fff;margin-bottom:20px;font-family:'Oswald';}
+    .auth-box input{width:100%;padding:12px;margin:10px 0;background:#222;border:1px solid #333;color:#fff;border-radius:6px;}
+    .auth-box button{width:100%;padding:12px;margin-top:10px;}
+    .error-msg{color:#ff4444;margin-top:10px;display:none;}
+    .success-msg{color:#4cd964;margin-top:10px;display:none;}
+  </style>
+</head>
+<body>
+  <div class="auth-box">
+    <h2>Forgot Password</h2>
+
+    <input type="email" id="forEmail" placeholder="Enter your email">
+
+    <p class="error-msg" id="forErr">* Email required</p>
+    <p class="success-msg" id="forOk">Reset link sent! Redirecting...</p>
+
+    <button class="btn btn-shadow-1" onclick="forgotPass()">Send Reset Link</button>
+
+    <a href="login.html" style="color:#888;display:block;margin-top:12px;">Back to Login</a>
+  </div>
+
+  <script>
+    function forgotPass(){
+      let e=document.getElementById('forEmail').value.trim();
+
+      if(e === ""){
+        document.getElementById('forErr').style.display='block';
+        document.getElementById('forOk').style.display='none';
+        return;
+      }
+
+      document.getElementById('forErr').style.display='none';
+      document.getElementById('forOk').style.display='block';
+
+      setTimeout(() => {
+        window.location.href = "404.html";
+      }, 1500);
+    }
+  </script>
+</body>
+</html>
