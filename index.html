@@ -6,10 +6,10 @@
 <title>Stackly  - Architecture HTML Template</title> 
 
 <!-- Favicons -->
-<link rel="shortcut icon" href="favicon.png">
-<link rel="apple-touch-icon" href="apple-touch-icon.png">
-<link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png">
+<link rel="shortcut icon" href="favicon.webp">
+<link rel="apple-touch-icon" href="apple-touch-icon.webp">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.webp">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.webp">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <!-- Styles -->
@@ -50,7 +50,7 @@
 
     <header id="top" class="header-home">
       <div class="brand-panel">
-        <a href="404.htmltop" class="brand"><img src="img/logo.png" alt="Logo" style="height:120px;"  ></a>
+        <a href="404.htmltop" class="brand"><img src="img/logo.webp" alt="Logo" style="height:120px;"  ></a>
         <div class="brand-name"></div>
         <div class="slide-number">
           <span class="current-number text-primary">0<span class="count">1</span></span>
@@ -65,10 +65,10 @@
             <div class="line"></div>
          </div>
         <ul class="social-list">
-          <li><a href="" class="fa fa-instagram"></a></li>
-          <li><a href="" class="fa fa-twitter"></a></li>
-          <li><a href="" class="fa fa-behance"></a></li>
-          <li><a href="" class="fa fa-facebook"></a></li>
+          <li><a href="404.html" class="fa fa-instagram"></a></li>
+          <li><a href="404.html" class="fa fa-twitter"></a></li>
+          <li><a href="404.html" class="fa fa-behance"></a></li>
+          <li><a href="404.html" class="fa fa-facebook"></a></li>
          </ul>  
       </div> 
 
@@ -76,12 +76,12 @@
 
       <nav class="navbar-desctop visible-md visible-lg">
         <div class="container">
-          <a href="#top" class="brand"><img src="img/logo.png" alt="Logo" style="height:80px;"></a>
+          <a href="#top" class="brand"><img src="img/logo.webp" alt="Logo" style="height:80px;"></a>
           <ul class="navbar-desctop-menu">
             <li class="active">
               <a href="index.html">Home</a>
               <ul>
-                <li><a href="../home page/index.html">Home Page 2</a></li>
+                <li><a href="homepage 2/index.html">Home Page 2</a></li>
                 <li class="active">
                   
                 </li>
@@ -124,59 +124,56 @@
       <!-- Navigation Mobile -->
 
       <nav class="navbar-mobile">
-        <a href="404.htmltop" class="brand"><img src="img/logo.png" alt="Logo" style="height:80px;"></a>
+  <a href="index.html" class="brand">
+    <img src="img/logo.webp" style="height:80px;">
+  </a>
 
-        <!-- Navbar Collapse -->
+  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-mobile">
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+  </button>
 
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-mobile">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
+  <div id="navbar-mobile" class="collapse navbar-collapse">
+    <ul class="navbar-nav-mobile">
+      
+      <li class="dropdown">
+  <a href="index.html">
+    Home <i class="fa fa-angle-down dropdown-arrow"></i>
+  </a>
 
-        <div class="dropdown-item">
-  <a href="index.html" class="dropdown-link">Home</a>
-  <span class="dropdown-arrow"><i class="fa fa-angle-down"></i></span>
-</div>
+  <ul class="submenu">
+    <li><a href="homepage 2/index.html">Home Page 2</a></li>
+  </ul>
+</li>
 
-<ul class="submenu">
-  <li><a href="../home page/index.html">Home Page 2</a></li>
-</ul>
 
-            <li>
-              <a href="about.html">About us</a>
-            </li>
-            <li>
-              <a href="404.html">Projects <i class="fa fa-angle-down"></i></a>
-              <ul>
-                <li><a href="projects.html">Projects - List</a></li>
-                <li>
-                  <a href="project.html">Project - details</a>
-                </li>
-              </ul>
-            </li>  
-            <li>
-              <a href="404.html">Blog <i class="fa fa-angle-down"></i></a>
-              <ul>
-                <li><a href="blog.html">Blog - List</a></li>
-                <li>
-                  <a href="blog-details.html">Blog - Post</a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a href="contacts.html">Contacts</a>
-            </li>
-            <li>
-              <a href="login.html">Login</a>
-            </li>
-            <li>
-              <a href="dashbord.html">Dashbord</a>
-            </li>
-          </ul>
-        </div>
-      </nav> 
+      <li><a href="about.html">About us</a></li>
+
+      <li>
+        <a href="#">Projects <i class="fa fa-angle-down"></i></a>
+        <ul>
+          <li><a href="projects.html">Projects – List</a></li>
+          <li><a href="project.html">Project – details</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="#">Blog <i class="fa fa-angle-down"></i></a>
+        <ul>
+          <li><a href="blog.html">Blog – List</a></li>
+          <li><a href="blog-details.html">Blog – Post</a></li>
+        </ul>
+      </li>
+
+      <li><a href="contacts.html">Contacts</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="dashbord.html">Dashboard</a></li>
+
+    </ul>
+  </div>
+</nav>
+
     </header>
 
   <!-- Layout -->
@@ -202,7 +199,7 @@
 
               <!-- Main image-->
 
-              <img src="img/slider/slide1.jpg"  alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg">
+              <img src="img/slider/slide1.webp"  alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg">
 
               <!-- Layer 1 -->
 
@@ -271,7 +268,7 @@
 
               <!-- Main image -->
 
-              <img src="img/slider/slide2.jpg"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg">
+              <img src="img/slider/slide2.webp"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg">
 
               <!-- Layer 1 -->
 
@@ -342,7 +339,7 @@
 
               <!-- Main image-->
 
-              <img src="img/slider/slide3.jpg"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg">
+              <img src="img/slider/slide3.webp"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg">
 
               <!-- Layer 1 -->
 
@@ -432,21 +429,21 @@
               <div class="col-base col-about-spec col-sm-6 col-md-4">
                 <h3 class="col-about-title">our<br> specialization<span class="text-primary">:</span></h3>
                 <div class="service-item">
-                  <img alt="" width="46" src="img/img-icon/icon-architecture.png">
+                  <img alt="" width="46" src="img/img-icon/icon-architecture.webp">
                   <h4>Architecture</h4>
                 </div>
                 <div class="service-item">
-                  <img alt="" width="58" src="img/img-icon/icon-interiors.png">
+                  <img alt="" width="58" src="img/img-icon/icon-interiors.webp">
                   <h4>Interiors</h4>
                 </div>
                 <div class="service-item">
-                  <img alt="" width="58" src="img/img-icon/icon-planing.png">
+                  <img alt="" width="58" src="img/img-icon/icon-planing.webp">
                   <h4>Planing</h4>
                 </div>
               </div>
               <div class="clearfix visible-sm"></div>
               <div class="col-base col-about-img col-sm-6 col-md-4">
-                <img alt="" class="img-responsive" src="img/380x370.jpg">
+                <img alt="" class="img-responsive" src="img/380x370.webp">
               </div>
             </div>
           </div>
@@ -462,9 +459,9 @@
         <div class="section-content">
           <div class="projects-carousel js-projects-carousel js-projects-gallery">
             <div class="project project-light">
-              <a href="img/projects/1-480x880.jpg" title="project 1">
+              <a href="img/projects/1-480x880.webp" title="project 1">
                 <figure>
-                  <img alt="" src="img/projects/1-480x880.jpg">
+                  <img alt="" src="img/projects/1-480x880.webp">
                   <figcaption>
                     <h3 class="project-title">
                       Residential care<br> project in Paris
@@ -478,9 +475,9 @@
               </a>
             </div>
             <div class="project project-light">
-              <a href="img/projects/2-480x880.jpg" title="project 2">
+              <a href="img/projects/2-480x880.webp" title="project 2">
                 <figure>
-                  <img alt="" src="img/projects/2-480x880.jpg">
+                  <img alt="" src="img/projects/2-480x880.webp">
                   <figcaption>
                     <h3 class="project-title">
                       Concert hall<br> in New york
@@ -494,9 +491,9 @@
               </a>
             </div>
             <div class="project">
-              <a href="img/projects/3-480x880.jpg" title="project 3">
+              <a href="img/projects/3-480x880.webp" title="project 3">
                 <figure>
-                  <img alt="" src="img/projects/3-480x880.jpg">
+                  <img alt="" src="img/projects/3-480x880.webp">
                   <figcaption>
                     <h3 class="project-title">
                       Modern hotel<br>in London
@@ -510,9 +507,9 @@
               </a>
             </div>
             <div class="project">
-              <a href="img/projects/4-480x880.jpg" title="project 4">
+              <a href="img/projects/4-480x880.webp" title="project 4">
                 <figure>
-                  <img alt="" src="img/projects/4-480x880.jpg">
+                  <img alt="" src="img/projects/4-480x880.webp">
                   <figcaption>
                     <h3 class="project-title">
                       Modern hotel<br>in London
@@ -526,9 +523,9 @@
               </a>
             </div>
             <div class="project">
-              <a href="img/projects/5-480x880.jpg" title="project 5">
+              <a href="img/projects/5-480x880.webp" title="project 5">
                 <figure>
-                  <img alt="" src="img/projects/5-480x880.jpg">
+                  <img alt="" src="img/projects/5-480x880.webp">
                   <figcaption>
                     <h3 class="project-title">
                       Residential care<br> project in Paris
@@ -542,9 +539,9 @@
               </a>
             </div>
             <div class="project">
-              <a href="img/projects/6-480x880.jpg" title="project 6">
+              <a href="img/projects/6-480x880.webp" title="project 6">
                 <figure>
-                  <img alt="" src="img/projects/6-480x880.jpg">
+                  <img alt="" src="img/projects/6-480x880.webp">
                   <figcaption>
                     <h3 class="project-title">
                       Residential care<br> project in Paris
@@ -558,9 +555,9 @@
               </a>
             </div>
             <div class="project">
-              <a href="img/projects/7-480x880.jpg" title="project 7">
+              <a href="img/projects/7-480x880.webp" title="project 7">
                 <figure>
-                  <img alt="" src="img/projects/7-480x880.jpg">
+                  <img alt="" src="img/projects/7-480x880.webp">
                   <figcaption>
                     <h3 class="project-title">
                       Residential care<br> project in Paris
@@ -574,9 +571,9 @@
               </a>
             </div>
             <div class="project">
-              <a href="img/projects/8-480x880.jpg" title="project 8">
+              <a href="img/projects/8-480x880.webp" title="project 8">
                 <figure>
-                  <img alt="" src="img/projects/8-480x880.jpg">
+                  <img alt="" src="img/projects/8-480x880.webp">
                   <figcaption>
                     <h3 class="project-title">
                       Residential care<br> project in Paris
@@ -597,7 +594,7 @@
 
       <section class="experience section">
         <div class="container">
-          <div class="text-parallax" data-stellar-background-ratio="0.85" style="background-image: url('img/bg/text-1.jpg');">
+          <div class="text-parallax" data-stellar-background-ratio="0.85" style="background-image: url('img/bg/text-1.webp');">
             <div class="text-parallax-content">12</div>
           </div>
           <h4 class="experience-info wow fadeInRight"><span class="text-primary">Years of successful work</span><br> in the market</h4>
@@ -615,34 +612,34 @@
           <div class="section-content">
             <ul class="clients-list">
               <li class="client">
-                <a href="404.html"><img alt="" src="img/client/1.png"></a>
+                <a href="404.html"><img alt="" src="img/client/1.webp"></a>
               </li>
               <li class="client">
-                <a href="404.html"><img alt="" src="img/client/2.png"></a>
+                <a href="404.html"><img alt="" src="img/client/2.webp"></a>
               </li>
               <li class="client">
-                <a href="404.html"><img alt="" src="img/client/3.png"></a>
+                <a href="404.html"><img alt="" src="img/client/3.webp"></a>
               </li>
               <li class="client">
-                <a href="404.html"><img alt="" src="img/client/4.png"></a>
+                <a href="404.html"><img alt="" src="img/client/4.webp"></a>
               </li>
               <li class="client">
-                <a href="404.html"><img alt="" src="img/client/5.png"></a>
+                <a href="404.html"><img alt="" src="img/client/5.webp"></a>
               </li>
               <li class="client">
-                <a href="404.html"><img alt="" src="img/client/1.png"></a>
+                <a href="404.html"><img alt="" src="img/client/1.webp"></a>
               </li>
               <li class="client">
-                <a href="404.html"><img alt="" src="img/client/2.png"></a>
+                <a href="404.html"><img alt="" src="img/client/2.webp"></a>
               </li>
               <li class="client">
-                <a href="404.html"><img alt="" src="img/client/3.png"></a>
+                <a href="404.html"><img alt="" src="img/client/3.webp"></a>
               </li>
               <li class="client">
-                <a href="404.html"><img alt="" src="img/client/4.png"></a>
+                <a href="404.html"><img alt="" src="img/client/4.webp"></a>
               </li>
               <li class="client">
-                <a href="404.html"><img alt="" src="img/client/5.png"></a>
+                <a href="404.html"><img alt="" src="img/client/5.webp"></a>
               </li>
             </ul>
           </div>
@@ -715,7 +712,7 @@
         <div class="container">
           <div class="row-base row">
             <div class="col-base text-left-md col-md-4">
-              <a href="404.html" class="brand"><img src="img/logo.png" alt="Logo" style="height:140px;"></a>
+              <a href="404.html" class="brand"><img src="img/logo.webp" alt="Logo" style="height:140px;"></a>
             </div>
             <div class="text-center-md col-base col-md-4">
               <a href="https://thestackly.com" class="author-link">
@@ -774,5 +771,22 @@
 <script src="js/rev-slider/revolution.extension.slideanims.min.js"></script>
 <script src="js/rev-slider/revolution.extension.video.min.js"></script>
 <script src="js/interface.js"></script> 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script>
+document.querySelectorAll(".dropdown-arrow").forEach(function(arrow){
+  
+  arrow.addEventListener("click", function(e){
+    e.preventDefault();
+
+    let submenu = this.parentElement.nextElementSibling;
+
+    submenu.style.display =
+      submenu.style.display === "block" ? "none" : "block";
+  });
+
+});
+</script>
+
 </body>
 </html>

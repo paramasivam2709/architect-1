@@ -6,11 +6,11 @@
 <title>Stakly  - Architecture HTML Template</title> 
 
 <!-- Favicons -->
-<link rel="shortcut icon" href="favicon.png">
-<link rel="apple-touch-icon" href="apple-touch-icon.png">
-<link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png">
-
+<link rel="shortcut icon" href="favicon.webp">
+<link rel="apple-touch-icon" href="apple-touch-icon.webp">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.webp">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.webp">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <!-- Styles -->
 <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,700" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
@@ -78,7 +78,7 @@
             <li>
               <a href="index.html">Home</a>
               <ul>
-                <li><a href="../home page/index.html">Home Page 2</a></li>
+                <li><a href="homepage 2/index.html">Home Page 2</a></li>
                 
               </ul>
             </li>
@@ -118,62 +118,56 @@
 
       <!-- Navigation Mobile -->
 
-      <nav class="navbar-mobile">
-        <a href="404.htmltop" class="brand js-target-scroll">
-          Stackly
-        </a>
+       <nav class="navbar-mobile">
+  <a href="index.html" class="brand">
+    <img src="img/logo.webp" style="height:80px;">
+  </a>
 
-        <!-- Navbar Collapse -->
+  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-mobile">
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+  </button>
 
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="404.htmlnavbar-mobile">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
+  <div id="navbar-mobile" class="collapse navbar-collapse">
+    <ul class="navbar-nav-mobile">
+      
+      <li class="dropdown">
+  <a href="index.html">
+    Home <i class="fa fa-angle-down dropdown-arrow"></i>
+  </a>
 
-        <div class="collapse navbar-collapse" id="navbar-mobile"> 
-          <ul class="navbar-nav-mobile">
-            <li>
-              <a href="index.html">Home <i class="fa fa-angle-down"></i></a>
-              <ul>
-                <li><a href="../home page/index.html">Home Page 2</a></li>
-                
-              </ul>
-            </li>
-            <li>
-              <a href="about.html">About us</a>
-            </li>
-            <li class="active">
-              <a href="404.html">Projects <i class="fa fa-angle-down"></i></a>
-              <ul>
-                <li><a href="projects.html">Projects - List</a></li>
-                <li class="active">
-                  <a href="project.html">— Project - details</a>
-                </li>
-              </ul>
-            </li>  
-            <li>
-              <a href="404.html">Blog <i class="fa fa-angle-down"></i></a>
-              <ul>
-                <li><a href="blog.html">Blog - List</a></li>
-                <li>
-                  <a href="blog-details.html">Blog - Post</a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a href="contacts.html">Contacts</a>
-            </li>
-            <li>
-              <a href="login.html">Login</a>
-            </li>
-            <li>
-              <a href="dashbord.html">Dashbord</a>
-            </li>
-          </ul>
-        </div>
-      </nav> 
+  <ul class="submenu">
+    <li><a href="homepage 2/index.html">Home Page 2</a></li>
+  </ul>
+</li>
+
+
+      <li><a href="about.html">About us</a></li>
+
+      <li>
+        <a href="#">Projects <i class="fa fa-angle-down"></i></a>
+        <ul>
+          <li><a href="projects.html">Projects – List</a></li>
+          <li><a href="project.html">Project – details</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="#">Blog <i class="fa fa-angle-down"></i></a>
+        <ul>
+          <li><a href="blog.html">Blog – List</a></li>
+          <li><a href="blog-details.html">Blog – Post</a></li>
+        </ul>
+      </li>
+
+      <li><a href="contacts.html">Contacts</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="dashbord.html">Dashboard</a></li>
+
+    </ul>
+  </div>
+</nav> 
     </header>
 
   <!-- Layout -->
@@ -182,7 +176,7 @@
     
     <!-- Home -->
     
-    <main class="main main-inner main-project" style="background-image:url('img/bg/project.jpg');" data-stellar-background-ratio="0.6">
+    <main class="main main-inner main-project" style="background-image:url('img/bg/project.webp');" data-stellar-background-ratio="0.6">
       <div class="container">
         <header class="main-header">
           <h1>Project in Paris</h1>
@@ -226,7 +220,7 @@
                 The operating system is the boss. With this image in mind, think of an office you’ve visited that was slow and inefficient.</p>
               </div>
               <div class="project-details-img col-md-8 col-md-offset-4">
-                <img alt="" class="img-responsive" src="img/projects/1-780x668.jpg">
+                <img alt="" class="img-responsive" src="img/projects/1-780x668.webp">
               </div>
             </div>
           </div>
@@ -241,7 +235,7 @@
                 The operating system is the boss. With this image in mind, think of an office you’ve visited that was slow and inefficient.</p>
               </div>
               <div class="project-details-img col-md-8">
-                <img alt="" class="img-responsive" src="img/projects/2-780x668.jpg">
+                <img alt="" class="img-responsive" src="img/projects/2-780x668.webp">
               </div>
             </div>
           </div>
@@ -256,7 +250,7 @@
                 The operating system is the boss. With this image in mind, think of an office you’ve visited that was slow and inefficient.</p>
               </div>
               <div class="project-details-img col-md-8 col-md-offset-4">
-                <img alt="" class="img-responsive" src="img/projects/3-780x668.jpg">
+                <img alt="" class="img-responsive" src="img/projects/3-780x668.webp">
               </div>
             </div>
           </div>

@@ -1,17 +1,3 @@
-//
-// SmoothScroll for websites v1.4.0 (Balazs Galambosi)
-// http://www.smoothscroll.net/
-//
-// Licensed under the terms of the MIT license.
-//
-// You may use it in your theme if you credit me. 
-// It is also free to use on any individual website.
-//
-// Exception:
-// The only restriction is to not publish any  
-// extension for browsers or native application
-// without getting a written permission first.
-//
 
 (function () {
   
@@ -100,16 +86,7 @@ function init() {
         isFrame = true;
     }
 
-    /**
-     * Please duplicate this radar for a Safari fix! 
-     * rdar://22376037
-     * https://openradar.appspot.com/radar?id=4965070979203072
-     * 
-     * Only applies to Safari now, Chrome fixed it in v45:
-     * This fixes a bug where the areas left and right to 
-     * the content does not trigger the onmousewheel event
-     * on some pages. e.g.: html, body { height: 100% }
-     */
+    
     else if (scrollHeight > windowHeight &&
             (body.offsetHeight <= windowHeight || 
              html.offsetHeight <= windowHeight)) {

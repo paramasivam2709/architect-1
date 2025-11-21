@@ -325,4 +325,19 @@
 			});
 		});
 	}
+	
+document.querySelectorAll(".dropdown-arrow").forEach(function(arrow){
+  
+  arrow.addEventListener("click", function(e){
+    e.preventDefault();
+
+    let submenu = this.parentElement.nextElementSibling;
+
+    submenu.style.display =
+      submenu.style.display === "block" ? "none" : "block";
+  });
+
+});
+
+
 })(jQuery);

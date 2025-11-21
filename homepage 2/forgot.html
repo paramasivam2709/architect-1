@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Forgot Password - Stackly</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container-xxl py-5">
+        <div class="container" style="max-width:450px;">
+            <h2 class="text-center mb-4">Forgot Password</h2>
+
+            <input id="fgEmail" type="email" class="form-control mb-2" placeholder="Enter your Email">
+
+            <small id="fgErr" style="color:red;display:none;">Please enter your email.</small>
+
+            <button id="fgBtn" class="btn btn-primary w-100 mt-3">Submit</button>
+
+            <div class="text-center mt-3">
+                <a href="login.html">Back to Login</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("fgBtn").onclick = function () {
+            let e = fgEmail.value.trim();
+
+            if (e === "") {
+                fgErr.style.display = "block";
+            } else {
+                window.location.href = "404.html";
+            }
+        };
+    </script>
+
+</body>
+</html>
