@@ -5,6 +5,10 @@
     --dark: #252525;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 h1,
 h2,
 .h1,

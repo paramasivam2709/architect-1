@@ -10,7 +10,11 @@
   <link rel="stylesheet" href="css/style.css">
 
   <style>
-    body {background:404.html0e0e0e; color:404.htmlfff; font-family:'Montserrat';}
+    body {
+      background:#0e0e0e;
+      color:#fff;
+      font-family:'Montserrat';
+    }
 
     .dashboard-wrapper {
       max-width:1200px;
@@ -18,6 +22,7 @@
       padding:20px;
     }
 
+    /* HEADER */
     .dash-header {
       display:flex;
       justify-content:space-between;
@@ -31,10 +36,7 @@
       margin:0;
     }
 
-    .dash-header button {
-      padding:10px 20px;
-    }
-
+    /* CARDS */
     .card-grid {
       display:grid;
       grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));
@@ -43,17 +45,17 @@
     }
 
     .card {
-      background:404.html1a1a1a;
+      background:#1a1a1a;
       padding:25px;
       border-radius:12px;
       text-align:center;
-      border:1px solid 404.html333;
+      border:1px solid #333;
       transition:0.3s;
     }
 
     .card:hover {
       transform:translateY(-5px);
-      border-color:404.html555;
+      border-color:#555;
     }
 
     .card h3 {
@@ -62,23 +64,60 @@
       font-size:22px;
     }
 
-    .logout-btn {
-      margin-top:30px;
-      padding:12px 20px;
+    /* BACK BUTTON */
+    .back-btn {
       display:inline-block;
+      padding:10px 20px;
+      background:#c5a47e;
+      color:#000;
+      border-radius:8px;
+      font-weight:bold;
+      margin-bottom:25px;
+      text-decoration:none;
     }
+
+    .back-btn:hover {
+      background:#fff;
+      color:#000;
+    }
+
+    /* GRAPHS */
+    canvas {
+      width: 100% !important;
+      max-height: 300px;
+    }
+
+    .chart-card {
+      margin-top:25px;
+      background:#1a1a1a;
+      padding:25px;
+      border-radius:12px;
+      border:1px solid #333;
+    }
+
+    .chart-card h3 {
+      font-family:'Oswald';
+      margin-bottom:15px;
+    }
+
   </style>
 </head>
+
 <body>
 
   <div class="dashboard-wrapper">
 
+    <!-- BACK BUTTON -->
+    <a href="index.html" class="back-btn">← Back</a>
+
+    <!-- HEADER -->
     <div class="dash-header">
       <h2>Welcome, User 👋</h2>
-      <button class="btn btn-shadow-1" onclick="logout()">Logout</button>
     </div>
 
+    <!-- DASHBOARD CARDS -->
     <div class="card-grid">
+
       <div class="card">
         <h3>Profile</h3>
         <p>View & edit your personal details.</p>
@@ -98,16 +137,57 @@
         <h3>Settings</h3>
         <p>Customize your experience.</p>
       </div>
+
     </div>
 
-    <a href="index.html" class="btn btn-gray logout-btn">← Back to Home</a>
+    <!-- SALES CHART -->
+    <div class="chart-card">
+      <h3>Sales Overview</h3>
+      <canvas id="salesChart"></canvas>
+    </div>
+
+    <!-- VISITOR CHART -->
+    <div class="chart-card">
+      <h3>Visitors Growth</h3>
+      <canvas id="visitorChart"></canvas>
+    </div>
 
   </div>
 
+  <!-- CHART.JS -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- CHART SCRIPTS -->
   <script>
-    function logout(){
-      window.location.href = "login.html";
-    }
+    // SALES CHART
+    const ctx1 = document.getElementById('salesChart').getContext('2d');
+    new Chart(ctx1, {
+      type: 'bar',
+      data: {
+        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
+        datasets: [{
+          label: 'Sales',
+          data: [12, 19, 9, 15, 22, 30],
+          backgroundColor: 'rgba(197,164,126,0.8)'
+        }]
+      }
+    });
+
+    // VISITOR CHART
+    const ctx2 = document.getElementById('visitorChart').getContext('2d');
+    new Chart(ctx2, {
+      type: 'line',
+      data: {
+        labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+        datasets: [{
+          label: 'Visitors',
+          data: [80, 120, 150, 200, 170, 250],
+          borderWidth: 3,
+          borderColor: 'rgba(197,164,126,1)',
+          fill: false
+        }]
+      }
+    });
   </script>
 
 </body>

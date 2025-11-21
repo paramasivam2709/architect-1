@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Register - Stackly</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container-xxl py-5">
+        <div class="container" style="max-width:450px;">
+            <h2 class="text-center mb-4">Register</h2>
+
+            <input id="regName" type="text" class="form-control mb-3" placeholder="Full Name">
+            <input id="regEmail" type="email" class="form-control mb-3" placeholder="Email">
+            <input id="regPass" type="password" class="form-control mb-2" placeholder="Password">
+
+            <small id="regErr" style="color:red;display:none;">Please fill all fields.</small>
+
+            <button id="regBtn" class="btn btn-primary w-100 mt-3">Create Account</button>
+
+            <div class="text-center mt-3">
+                <a href="login.html">Already have an account? Login</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("regBtn").onclick = function () {
+            let n = regName.value.trim();
+            let e = regEmail.value.trim();
+            let p = regPass.value.trim();
+
+            if (n === "" || e === "" || p === "") {
+                regErr.style.display = "block";
+            } else {
+                window.location.href = "404.html";
+            }
+        };
+    </script>
+
+</body>
+</html>
