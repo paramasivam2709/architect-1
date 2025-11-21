@@ -2605,3 +2605,42 @@ img.mfp-img{
 }
 
 
+.footer-social {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+}
+
+.footer-social li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.footer-social .fa {
+  font-size: 20px;
+  color: #aaa;
+  transition: 0.3s;
+}
+
+.footer-social .fa:hover {
+  color: #c5a47e; /* gold hover */
+  text-decoration: none;
+}
+.dropdown-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 1em;
+}
+
+.dropdown-item .dropdown-link {
+  color: #fff;
+  text-decoration: none;
+  flex: 1;
+}
+
+.dropdown-arrow {
+  color: #fff;
+  font-size: 16px;
+  padding-left: 10px;
+}
