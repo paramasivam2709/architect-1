@@ -2640,3 +2640,20 @@ img.mfp-img{
   font-size: 16px;
   padding-left: 10px;
 }
+
+.navbar-mobile,
+#mobile-menu {
+  z-index: 99999 !important;
+  position: relative;
+}
+
+.rev_slider,
+.rev_slider_wrapper,
+.tp-revslider-mainul {
+  z-index: 1 !important;
+}
+
+.arrow-left,
+.arrow-right {
+  z-index: 99999 !important;
+}

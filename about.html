@@ -115,41 +115,51 @@
       <!-- Navigation Mobile -->
 <nav class="navbar-mobile">
   <a href="index.html" class="brand">
-    <img src="img/logo.png" alt="Logo" style="height:80px;">
+    <img src="img/logo.webp" alt="Logo" style="height:80px;">
   </a>
 
   <!-- Hamburger -->
-  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-mobile">
+  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mobile-menu">
     <span class="icon-bar"></span>
     <span class="icon-bar"></span>
     <span class="icon-bar"></span>
   </button>
 
-  <!-- COLLAPSIBLE MENU -->
-  <div id="navbar-mobile" class="collapse navbar-collapse">
+  <!-- COLLAPSIBLE PANEL -->
+  <div id="mobile-menu" class="collapse navbar-collapse">
 
     <ul class="navbar-nav-mobile">
 
-      <li>
-        <a href="index.html">Home <i class="fa fa-angle-down"></i></a>
-        <ul>
+      <!-- HOME -->
+      <li class="dropdown">
+        <a href="index.html" class="main-link">Home</a>
+        <span class="dropdown-arrow"><i class="fa fa-angle-down"></i></span>
+
+        <ul class="submenu">
           <li><a href="homepage 2/index.html">Home Page 2</a></li>
         </ul>
       </li>
 
+      <!-- ABOUT -->
       <li><a href="about.html">About us</a></li>
 
-      <li>
-        <a href="#">Projects <i class="fa fa-angle-down"></i></a>
-        <ul>
+      <!-- PROJECTS -->
+      <li class="dropdown">
+        <a href="#" class="main-link">Projects</a>
+        <span class="dropdown-arrow"><i class="fa fa-angle-down"></i></span>
+
+        <ul class="submenu">
           <li><a href="projects.html">Projects – List</a></li>
           <li><a href="project.html">Project – Details</a></li>
         </ul>
       </li>
 
-      <li>
-        <a href="#">Blog <i class="fa fa-angle-down"></i></a>
-        <ul>
+      <!-- BLOG -->
+      <li class="dropdown">
+        <a href="#" class="main-link">Blog</a>
+        <span class="dropdown-arrow"><i class="fa fa-angle-down"></i></span>
+
+        <ul class="submenu">
           <li><a href="blog.html">Blog – List</a></li>
           <li><a href="blog-details.html">Blog – Post</a></li>
         </ul>
