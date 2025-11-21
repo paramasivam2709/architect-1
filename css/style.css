@@ -1,11 +1,4 @@
-/* ------------------------------------------------------------------------------
-
-  Template Name: Go.arch 
-  Description: Go.arch  - Architecture HTML Template
-  Author: Murren
-  Author URI: http://themeforest.net/user/murren20
-  Version: 1.0
-  
+/*
   1.  Global
 
       1.1 General
@@ -85,6 +78,9 @@
 html{
   font-size: 75%;
   -webkit-font-smoothing: antialiased;
+}
+html, body {
+  overflow-x: hidden;
 }
 
 body{
